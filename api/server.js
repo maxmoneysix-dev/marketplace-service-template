@@ -8,7 +8,6 @@ import { cors } from 'hono/cors';
 import { logger } from 'hono/logger';
 import { prettyJSON } from 'hono/pretty-json';
 import { HTTPException } from 'hono/http-exception';
-import { x402Middleware } from '@proxies-sx/x402-hono';
 
 const app = new Hono();
 
