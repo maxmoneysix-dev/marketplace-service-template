@@ -17,10 +17,14 @@ services:
         value: 10000
       - key: AI_ENGINE_URL
         value: https://serp-ai-engine.onrender.com
+      - key: MOONSHOT_API_KEY
+        value: sk-H5M5pLgSe5w0IqmSxxuxJ98s7quLrAgdouv85hyAMzJaD1vx
+      - key: PROXIES_SX_API_KEY
+        value: free_trial
       - key: X402_PRIVATE_KEY
-        sync: false
+        value: 6wJg9tyKFbzjiM5kU0TD7wOIB80/bfxEgyp9dNyzKSsAf8/Vpenpg1MHx0QQC8ZnCkpZ+8p/SGv13hbNXKflOQ==
       - key: X402_RECEIVER_ADDRESS
-        sync: false
+        value: 12x3AzDYV6WUYjPuv7mh3a73WSZQZazSoJCzJqayw632
     healthCheckPath: /health
     autoDeploy: true
 
@@ -37,12 +41,10 @@ services:
         value: 1
       - key: PORT
         value: 10000
-      - key: OPENAI_API_KEY
-        sync: false
       - key: MOONSHOT_API_KEY
-        sync: false
+        value: sk-H5M5pLgSe5w0IqmSxxuxJ98s7quLrAgdouv85hyAMzJaD1vx
       - key: PROXIES_SX_API_KEY
-        sync: false
+        value: free_trial
     healthCheckPath: /health
     autoDeploy: true
 
