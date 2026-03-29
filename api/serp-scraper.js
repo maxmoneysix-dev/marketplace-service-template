@@ -43,7 +43,6 @@ async function serpApiSearch(query, options = {}) {
   });
   
   // Add Proxies.sx if available
-  const { PROXIES_SX_API_KEY } = getEnvVars();
   if (PROXIES_SX_API_KEY && PROXIES_SX_API_KEY !== 'free_trial') {
     params.append('proxy', 'true');
     console.log('🌐 Using Proxies.sx mobile proxy');
