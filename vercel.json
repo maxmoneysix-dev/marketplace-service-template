@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/server.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "MOONSHOT_API_KEY": "sk-H5M5pLgSe5w0IqmSxxuxJ98s7quLrAgdouv85hyAMzJaD1vx",
+    "PROXIES_SX_API_KEY": "free_trial",
+    "X402_PRIVATE_KEY": "6wJg9tyKFbzjiM5kU0TD7wOIB80/bfxEgyp9dNyzKSsAf8/Vpenpg1MHx0QQC8ZnCkpZ+8p/SGv13hbNXKflOQ==",
+    "X402_RECEIVER_ADDRESS": "12x3AzDYV6WUYjPuv7mh3a73WSZQZazSoJCzJqayw632"
+  }
+}
