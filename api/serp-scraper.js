@@ -182,7 +182,10 @@ async function serpApiSearch(query, options = {}) {
  */
 export async function scrapeGoogleSERP(query, options = {}) {
   console.log('🔍 scrapeGoogleSERP called:', query);
+  console.log('🔍 process.env.SERPAPI_KEY exists:', !!process.env.SERPAPI_KEY);
   const { SERPAPI_KEY } = getEnvVars();
+  console.log('🔍 SERPAPI_KEY from getEnvVars exists:', !!SERPAPI_KEY);
+  console.log('🔍 SERPAPI_KEY value preview:', SERPAPI_KEY ? SERPAPI_KEY.substring(0, 10) + '...' : 'null');
   
   // Try SerpAPI first (real Google data)
   if (SERPAPI_KEY) {
